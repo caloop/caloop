@@ -52,7 +52,8 @@
 
 	 
 	  <a id="home-intro"></a>
-	  <section class="home-intro" style="background-image: url('images/img3.jpg'); background-size:cover;">
+	  <div class="shadow-bg"></div>
+	  <section class="home-intro" style="background-image: url('images/img3.jpg');">
 		<div class="container center">
 		  <div class="row center-block">
 			<div class="col-xs-12 text-center">
@@ -73,13 +74,22 @@
 	  
 	  
 	  <a id="about"></a>
-	  <section class="about">
+	  <section class="about py-5">
 		<div class="container center">
 		  <div class="row justify-content-center">
 			<div class="col-sm-6">
 			  <div class="content">
-				<blockquote>Junior Developer
-				<small>Since 2022</small></blockquote>
+				<div class="row">
+					<div class="col-md-2">
+						<img src="images/profile.jpg" style="border-radius: 50%;" width="70" alt="">
+					</div>
+					<div class="col">
+						<blockquote>Full-Stack Developer
+						<small>Since 2022</small></blockquote>
+					</div>
+					
+				</div>
+				
 				<p>I am a person fascinated by technology since my childhood. I studied on my own and was able to get my first job in the field. </p>
 				<p>Currently, I work as a fullstack web developer, and I am graduating in Systems Analysis and Development.</p>
 				<p>I studied Python, PHP, and JavaScript. I also have experience with tools like Laravel, MySql, Jquery, Django and GIT.</p>
@@ -89,51 +99,41 @@
 		</div>
 	  </section>  
 
-	  <a id="portfolio"></a>
+	  
+
 	  <section class="portfolio">
-		<div class="container">
+
+		<div class="container-fluid ">
 		  <div class="content">
 			<div class="row">
-			  <div class="col-xs-12 portfolio-title">
-				<h2 class="text-center">My Projects</h2>
+			  <div class="col-md-6 text-center mb-5" >
+				<div class="row photos ">
+					<img src="images/note.png" class="mb-2" id="big" alt="" >
+				</div>
+				<h4 >BUGS SURFBOARDS - INCOMPLETE <span class="text-muted"></span></h4>
+				<h2><a href="https://bugssurf.com.br">ECCOMERCE & SURF PORTIFÓLIO</a></h2>
+					
 			  </div>
-			</div>
-			<div class="row">
-			  <div class="col-sm-6">
-				<a href="https://bugssurf.com.br" target="_blank">
-				  <div class="project" style="background-image:url(images/bugs-site.png)">
-					<div class="overlay">
-						 <h4>Bugs Surf Store</h4>
-					</div>
-				  </div>
-				</a>
+			  <div class="col-sm-6  text-center mb-5">
+				<div class="row photos">
+					<img src="images/ipad.png" class="mb-2" id="big" alt="" >
+				</div>
+				<h4 >MEDICINA DA VIDA <span class="text-muted"></span></h4>
+				<h2><a href="https://medicinadavida.com.br">Medical Clinic Website & Blog</a></h2>
 			  </div>
-			  <div class="col-sm-6">
-				<a href="https://github.com/rianjd/project-helpdesk" target="_blank">
-				  <div class="project" style="background-image:url(images/tickets.png)">
-					<div class="overlay">
-					 <h4>Support Tickets</h4>
-					</div>
-				  </div>
-				</a>
+			  <div class="col-sm-6  text-center mb-5">
+				<div class="row photos">
+					<img src="images/pc.png" class="mb-2" id="big" alt="" >
+				</div>
+				<h4 >TICKETS PROJECT<span class="text-muted"></span></h4>
+				<h2><a href="#tkt" id="oops">internal tool</a></h2>
 			  </div>
-			  <div class="col-sm-6">
-				<a href="https://medicinadavida.com.br" target="_blank">
-				  <div class="project" style="background-image:url(images/logo_med.png)">
-					<div class="overlay">
-					<h4>Medicina da Vida</h4>
-					</div>
-				  </div>
-				</a>
-			  </div>
-			  <div class="col-sm-6">
-				<a href="#" target="_blank">
+			  <div class="col-sm-6 flex mb-5 text-center">
 				  <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
-					<div class="overlay">
-					<h4>Coming soon</h4>
-					</div>
+						<div class="overlay">
+							<h4>Coming soon</h4>
+						</div>
 				  </div>
-				</a>
 			  </div>
 			</div>     
 		  </div>
@@ -142,11 +142,6 @@
 	  <section class="about">
 		<div class="container center">
 			<div class="content">
-				<div class="row justify-content-center">
-					<div class="col-xs-12 title text-center">
-					  <h2 class="text-center">Tecnologies</h2>
-					</div>
-				</div>
 				<div class="row justify-content-center" style="display: flex;
 				align-items: center; margin-top: 20px;">
 					<div class="col-6 col-md-4 text-center">
@@ -192,6 +187,28 @@
 		  </div>
 		</div>
 	  </section>
+
+	  <div id="oops-div" class="">
+		<div class="row">
+			<div class="not-found">
+				<img src="images/oops.png" width="80" alt="">
+			</div>
+			<div class="col">
+				<h3 class="text-center">Oops! Essa pagina é exclusiva.</h3>
+			</div>
+		</div>
+	  </div>
 	</body>
 
+	<script>
+		$(document).ready(function () {
+			$('#oops').click(function(){
+				$('#oops-div').addClass('oops');
+				function minhaFuncao() {
+					$('#oops-div').removeClass('oops');
+				}setTimeout(minhaFuncao, 4800);			
+			})
+		});
+	</script>
 </html>
+
