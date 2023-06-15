@@ -1,7 +1,7 @@
 			
 			.navbar {
 			  margin-bottom: 0;
-			  background-color: rgba(8, 8, 8, 0.8);
+			  background-color: rgba(8, 8, 8, 0.802);
 			  border: none;
 			}
 			.navbar.navbar-default .navbar-nav > li > a, .navbar.navbar-default .navbar-header .navbar-brand {
@@ -12,6 +12,16 @@
 			}
 			.navbar.navbar-default .navbar-nav > li > a:hover, .navbar.navbar-default .navbar-nav > li > a:focus, .navbar.navbar-default .navbar-nav > li > a:active, .navbar.navbar-default .navbar-header .navbar-brand:hover, .navbar.navbar-default .navbar-header .navbar-brand:focus, .navbar.navbar-default .navbar-header .navbar-brand:active {
 			  color: #48A09B;
+			}
+
+			.row.photos img#big{
+				width: 100%;
+
+			}
+
+			.gradient{
+				height: 10em;
+				background-image: linear-gradient(to bottom,  #FFF8F3 0%,  #222 100%);
 			}
 
 			section {
@@ -39,20 +49,41 @@
 			  float: none;
 			}
 			section.portfolio {
-			  background-color: #222;
+			  background-image: linear-gradient(to bottom, #718e5a , #e2dcc0d6);
 			}
 			section.portfolio h2 {
-			  margin-top: 40px;
+			  margin-top: 20px;
 			  margin-bottom: 40px;
 			  font-family: "Cantarell", sans-serif;
 			  color: #3b5c3a;
 			  font-weight: 700;
 			  text-transform: uppercase;
 			}
+
+			section.portfolio h2 a{
+				text-decoration: none;
+				color: #3b5c3a;
+				transition: .3s ease;
+
+			  }
+			section.portfolio h2 a:hover{
+				text-decoration: none;
+				color: #ffffff;
+
+			}
+			section.portfolio h4 {
+				font-family: "Cantarell", sans-serif;
+				color: #3d3d3d;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+
 			section.portfolio .project {
-			  width: 100%;
-			  height: 200px;
+			  width: 80%;
+			  height: 50%;
 			  position: relative;
+			  left: 10%;
+			  top: 10%;
 			  background-size: cover;
 			  background-repeat: no-repeat;
 			  background-position: center;
@@ -95,6 +126,12 @@
 			section.home-intro{
 				padding: 10vh;
 			}	
+
+			.shadow-bg{
+				background-size: cover;
+				background-color: #22222288;
+
+			}
 			section.home-intro h1 {
 			  font-family: "Bebas Neue";
 			  font-weight: 700;
@@ -156,14 +193,14 @@
 			  font-weight: 700;
 			}
 			section.contact {
-			  background-color: #a6c49e4f;
+			  background-color: #000000b6;
 
 			}
 			section.contact h2 {
 			  font-family: "Cantarell", sans-serif;
 			  font-weight: 700;
 			  font-size: 22px;
-			  color: #CDD7B6;
+			  color: #dadcd6b6;
 			  text-transform: uppercase;
 			}
 			@media (min-width: 768px) {
@@ -177,11 +214,11 @@
 			  font-size: 28px;
 			  text-transform: uppercase;
 			  text-decoration: none;
-			  color: #3b5c3a;
+			  color: #f2ffecca;
 			  transition: color 0.3s linear;
 			}
 			section.contact h3 a:hover, section.contact h3 a:focus, section.contact h3 a:active {
-			  color: #2c412c;
+			  color: #708c70cc;
 			}
 			@media (min-width: 768px) {
 			  section.contact h3 a {
@@ -194,6 +231,40 @@
 			  background: rgb(206, 207, 206);
 			  border-radius: 5px;
 			  margin-bottom: 10px;
+			}
+			#oops-div{
+				position: fixed;
+				visibility: hidden;
+				opacity: 0;
+			}
+			.oops{
+				position: fixed;
+				opacity: 1 !important;
+				visibility: visible !important;
+				z-index: 10;
+				box-shadow: 2px 2px 10px #5f5f5f54;
+				right: 40px;
+				bottom: 40px;
+				min-width: 20%;
+				background: #fffcf6db;
+				padding: 50px 10px;
+				border-radius: 5px;
+				animation: fade-in .8s forwards, fade-out .8s forwards 4s;
+			}
+			@keyframes fade-in {
+				0%{right: -500px; opacity: 0;}
+				100%{right: 3rem;opacity: 1;}
+			}
+			
+			@keyframes fade-out {
+				0% { right: 3rem; opacity: 1;}
+				100% { right: -500px; opacity: 0; }
+			}
+
+			.oops .not-found{
+				position: absolute;
+				top: -55px;
+				right: 10px;
 			}
 
 
@@ -470,3 +541,4 @@
   src: url(https://fonts.gstatic.com/s/yantramanav/v11/flU8Rqu5zY00QEpyWJYWN5fzXeY.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
