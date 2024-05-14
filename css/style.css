@@ -1,0 +1,706 @@
+			
+			.navbar {
+			  position: fixed !important;
+			  margin-bottom: 0;
+			  background-color: transparent;
+			  border: none; 
+			  padding: 40px !important;
+			  transition: .3s ease-in-out;
+			}
+			@media (min-width: 768px) {
+				.navbar.scrolled {
+					padding: 20px !important;
+					background-color: #232323; /* Cor de fundo quando rolar para baixo */
+				}
+			}
+			.navbar.scrolled {
+				background-color: #232323; /* Cor de fundo quando rolar para baixo */
+			}
+			
+			.navbar.navbar-default .navbar-nav > li > a, .navbar.navbar-default .navbar-header .navbar-brand {
+			  font-family: "Cantarell", sans-serif;
+			  text-transform: uppercase;
+			  transition: color 0.3s ease-in-out;
+			  color: #FEFDEB;
+			}
+			.navbar.navbar-default .navbar-nav > li > a:hover, .navbar.navbar-default .navbar-nav > li > a:focus, .navbar.navbar-default .navbar-nav > li > a:active, .navbar.navbar-default .navbar-header .navbar-brand:hover, .navbar.navbar-default .navbar-header .navbar-brand:focus, .navbar.navbar-default .navbar-header .navbar-brand:active {
+			  color: #6cb961;
+			}
+
+			.row.photos img#big{
+				width: 100%;
+
+			}
+
+			.outin{
+				overflow: hidden;
+			}
+
+			.outin img{
+				position: relative;
+				left: 300px;
+				animation: fade-in-left .5s forwards ;
+			}
+
+			.col.outset blockquote{
+				overflow: hidden;
+			}
+
+			.col.outset blockquote small{
+				position: relative;
+				left: -300px;
+				animation: fade-in-left .5s forwards;
+			}
+
+			.col.outset blockquote p{
+				font-family: "Cantarell", sans-serif;
+				font-weight: 700;
+				position: relative;
+				left: -300px;
+				margin: 0 0px;
+				font-size: 17.5px;
+				animation: fade-in-left .5s forwards;
+			}
+
+			@keyframes fade-in-left {
+				100%{left: 0px;}
+			}
+
+			.gradient{
+				height: 10em;
+				background-image: linear-gradient(to bottom,  #FFF8F3 0%,  #222 100%);
+			}
+
+			section {
+			  background-size: cover;
+			  background-repeat: no-repeat;
+			  background-position: center;
+			  background-attachment: fixed;
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			  overflow: hidden;
+			  width: 100%;
+			}
+			section .vcenter {
+			  height: 100%;
+			}
+			section .vcenter .row {
+			  height: 100%;
+			  display: table;
+			}
+			section .vcenter .row div[class^=col-] {
+			  display: table-cell;
+			  vertical-align: middle;
+			  float: none;
+			}
+			section.portfolio {
+			  background-image: linear-gradient(to bottom, #718e5a , #e2dcc0d6);
+			}
+			section.portfolio h2 {
+			  margin-top: 20px;
+			  margin-bottom: 40px;
+			  font-family: "Cantarell", sans-serif;
+			  color: #3b5c3a;
+			  font-weight: 700;
+			  text-transform: uppercase;
+			}
+
+			section.portfolio h2 a{
+				text-decoration: none;
+				color: #3a5c37;
+				font-weight: bold;
+				transition: .3s ease;
+
+			  }
+			section.portfolio h2 a:hover{
+				text-decoration: none;
+				color: #ffffff;
+
+			}
+			section.portfolio h4 {
+				font-family: "Cantarell", sans-serif;
+				color: #505050;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+
+			section.portfolio .project {
+			  width: 80%;
+			  height: 50%;
+			  position: relative;
+			  left: 10%;
+			  top: 10%;
+			  background-size: cover;
+			  background-repeat: no-repeat;
+			  background-position: center;
+			  margin-bottom: 20px;
+			  border-radius: 10px;
+			}
+			section.portfolio .project .overlay {
+			  display: table;
+			  position: absolute;
+			  height: 100%;
+			  width: 100%;
+			  top: 0;
+			  bottom: 0;
+			  right: 0;
+			  left: 0;
+			  background-color: rgba(8, 8, 8, 0.7);
+			  overflow: hidden;
+			  z-index: 10;
+			  transition: opacity 0.3s ease-in-out;
+			  opacity: 0.3;
+			}
+			section.portfolio .project .overlay h4 {
+			  display: table-cell;
+			  vertical-align: middle;
+			  text-align: center;
+			  text-transform: uppercase;
+			  font-family: "Cantarell", sans-serif;
+			  font-size: 24px;
+			  color: #CDD7B6;
+			  opacity: 0.8;
+			}
+			section.portfolio .project:hover .overlay, section.portfolio .project:focus .overlay, section.portfolio .project:active .overlay {
+			  opacity: 0.6;
+			}
+			section .content {
+			  padding-top: 30px;
+			  padding-bottom: 30px;
+			  
+			}
+
+
+			.shadow-total{
+				background-size: cover;
+				background-color: #22222288;
+				padding: 10vh;
+
+			}
+			section.home-intro h1 {
+			  font-family: "Bebas Neue";
+			  font-weight: 700;
+			  font-size: 60px;
+			  color: #e4e4e4;
+			  margin-top: 0;
+			  margin-bottom: 15px;
+			  
+			}
+			@media (min-width: 768px) {
+			  section.home-intro h1 {
+				font-size: 90px;
+			  }
+			}
+			section.home-intro h2 {
+			  font-family: "Cantarell", sans-serif;
+			  font-weight: 700;
+			  font-size: 22px;
+			  color: #a3a3a3;
+			  padding-top: 10px;
+			  margin-top: 0;
+			  margin-bottom: 25px;
+			  display: inline-block;
+			}
+			@media (min-width: 768px) {
+			  section.home-intro h2 {
+				font-size: 32px;
+			  }
+			}
+			section.home-intro ul {
+			  padding: 0;
+			  list-style-type: none;
+			}
+			section.home-intro ul li {
+			  display: inline;
+			}
+			section.home-intro ul li a {
+			  color: #73a381;
+			  transition: color 0.3s linear;
+			}
+			section.home-intro ul li a:hover, section.home-intro ul li a:focus, section.home-intro ul li a:active {
+			  color: #ffffff;
+			}
+			section.about {
+			  background-color: #FFF8F3;
+			  color: #444444;
+			  font-family: "Cantarell", sans-serif;
+			  box-shadow: 1px px 13px #22222279;
+			  
+			}
+
+			section.about p {
+			  font-size: 16px;
+			  font-weight: 400;
+			  line-height: 1.4;
+			}
+			section.about blockquote {
+			  font-family: "Cantarell", sans-serif;
+			  font-weight: 700;
+			}
+			section.contact {
+			  background-color: #000000b6;
+
+			}
+			section.contact h2 {
+			  font-family: "Cantarell", sans-serif;
+			  font-weight: 700;
+			  font-size: 22px;
+			  color: #dadcd6b6;
+			  text-transform: uppercase;
+			}
+			@media (min-width: 768px) {
+			  section.contact h2 {
+				font-size: 28px;
+			  }
+			}
+			section.contact h3 a {
+			  font-family: "Cantarell", sans-serif;
+			  font-weight: 700;
+			  font-size: 28px;
+			  text-transform: uppercase;
+			  text-decoration: none;
+			  color: #f2ffecca;
+			  transition: color 0.3s linear;
+			}
+			section.contact h3 a:hover, section.contact h3 a:focus, section.contact h3 a:active {
+			  color: #708c70cc;
+			}
+			@media (min-width: 768px) {
+			  section.contact h3 a {
+				font-size: 42px;
+			  }
+			}
+
+			.portfolio-title {
+			  width: 100%;
+			  background: rgb(206, 207, 206);
+			  border-radius: 5px;
+			  margin-bottom: 10px;
+			}
+			#oops-div{
+				position: fixed;
+				visibility: hidden;
+				opacity: 0;
+			}
+			.oops{
+				position: fixed;
+				opacity: 1 !important;
+				visibility: visible !important;
+				z-index: 10;
+				box-shadow: 2px 2px 10px #5f5f5f54;
+				right: 40px;
+				bottom: 40px;
+				min-width: 20%;
+				background: #fffcf6db;
+				padding: 50px 10px;
+				border-radius: 5px;
+				animation: fade-in .8s forwards, fade-out .8s forwards 4s;
+			}
+
+			.item{
+				opacity: 0;
+			}
+
+			.item.in{
+				animation: fade-item .7s forwards;
+			}
+			@keyframes fade-item {
+				0%{right: -200px; opacity: 0;}
+				50%{right: 60px;opacity: 1;}
+				70%{right: -30px;opacity: 1;}
+				90%{right: 10px;opacity: 1;}
+				100%{right: 0;opacity: 1;}
+			}
+			
+			@keyframes fade-in {
+				0%{right: -500px; opacity: 0;}
+				100%{right: 3rem;opacity: 1;}
+			}
+			
+			@keyframes fade-out {
+				0% { right: 3rem; opacity: 1;}
+				100% { right: -500px; opacity: 0; }
+			}
+
+			.oops .not-found{
+				position: absolute;
+				top: -55px;
+				right: 10px;
+			}
+
+
+
+  /* arabic */
+@font-face {
+  font-family: 'Changa';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/changa/v20/2-c79JNi2YuVOUcOarRPgnNGooxCZ62xcjLj9ytf.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Changa';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/changa/v20/2-c79JNi2YuVOUcOarRPgnNGooxCZ62xcjnj9ytf.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Changa';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/changa/v20/2-c79JNi2YuVOUcOarRPgnNGooxCZ62xcjfj9w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/chivo/v18/va9b4kzIxd1KFppkaRKvDRPJVDf_vB_en2rTJXg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/chivo/v18/va9b4kzIxd1KFppkaRKvDRPJVDf_vB_enmrTJXg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/chivo/v18/va9b4kzIxd1KFppkaRKvDRPJVDf_vB_ekGrT.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3JZQNVED7rKGKxtqIqX5EUCGZ2dIn0FyA96fCT6oJRIizoYV0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3JZQNVED7rKGKxtqIqX5EUCGZ2dIn0FyA96fCT6oJRIyzoYV0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3JZQNVED7rKGKxtqIqX5EUCGZ2dIn0FyA96fCT6oJRLSzo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3aZQNVED7rKGKxtqIqX5EUAnx4RHw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3aZQNVED7rKGKxtqIqX5EUA3x4RHw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3aZQNVED7rKGKxtqIqX5EUAnx4RHw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3aZQNVED7rKGKxtqIqX5EUA3x4RHw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* khmer */
+@font-face {
+  font-family: 'Koulen';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/koulen/v25/AMOQz46as3KIBPemjno8ouY.woff2) format('woff2');
+  unicode-range: U+1780-17FF, U+200C, U+25CC;
+}
+/* latin */
+@font-face {
+  font-family: 'Koulen';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/koulen/v25/AMOQz46as3KIBPemhXo8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u8w4BMUTPHjxsAUi-qJCY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u8w4BMUTPHjxsAXC-q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwaPGR_p.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v22/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4VhOsH3xE.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v22/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4VhusH3xE.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v22/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4Vh-sH3xE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v22/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4ViesH.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Passion One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/passionone/v16/PbynFmL8HhTPqbjUzux3JEuf9lvQ6Q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Passion One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/passionone/v16/PbynFmL8HhTPqbjUzux3JEuR9ls.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/yantramanav/v11/flU8Rqu5zY00QEpyWJYWN5fyXeZhCQ.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/yantramanav/v11/flU8Rqu5zY00QEpyWJYWN5f9XeZhCQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/yantramanav/v11/flU8Rqu5zY00QEpyWJYWN5fzXeY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('path-to-fonts/poppins.woff2') format('woff2'),
+		 url('path-to-fonts/poppins.woff') format('woff'),
+		 url('path-to-fonts/poppins.ttf') format('truetype');
+	/* Add additional font formats if available */
+	/* You can also include font-weight and font-style if needed */
+  }
+
+.banner {
+	display: block;
+	min-height: 200px;
+	width: 100%;
+	position: relative;
+}
+.typed_wrap {
+	display: block;
+	border-bottom: 4px solid #ecf0f173;
+	width: 350px;
+	height: auto;
+	padding: 20px;
+	
+	/*centers it in the .banner*/
+	position: relative;
+	left: 50%;
+	-webkit-transform: translate(-50%,0%);
+	-moz-transform: translate(-50%,0%);
+	-ms-transform: translate(-50%,0%);
+	-o-transform: translate(-50%,0%);
+	transform: translate(-50%,0%);
+}
+
+.typed_wrap h1 {
+	display: inline;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.btns {
+	display: block;
+	width: 400px;
+	margin: 0;
+	padding: 30px 0 0 30px;
+}
+.btns a {
+	display: inline-block;
+	margin-left: 5px;
+}
+.btns a:first-child{margin-left:0}
+.btn {
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #ecf0f1;
+	text-decoration: none;
+}
+a .btn {
+	cursor: pointer;
+	border: 1.5px solid #ecf0f1;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px;
+	list-style-type: none;
+	transition: all .3s;
+}
+
+.btn:hover {
+	background: #ecf0f1;
+	color: #34495e;
+}
