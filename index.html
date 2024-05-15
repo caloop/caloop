@@ -27,6 +27,8 @@
 		crossorigin="anonymous"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/intersect.js"></script>
+
 
 	<script>
 
@@ -54,7 +56,8 @@
 					<li><a href="#home">Início</a></li>
 					<li><a href="#about">Sobre Mim</a></li>
 					<li><a href="#portfolio">Projetos</a></li>
-					<li><a href="#contact">Contato</li>
+					<li><a href="#contact">Contato</a></li>
+
 				</ul>
 				</li>
 				</ul>
@@ -64,7 +67,7 @@
 
 
 	<a id="home-intro"></a>
-	<section class="home-intro" style="background-image: url('images/img3.jpg');">
+	<section class="home-intro" style="background-image: url('images/img3.jpg'); background-size:auto;">
 		<div class="shadow-total">
 			<div class="container center">
 				<div class="row center-block">
@@ -72,7 +75,7 @@
 						<div class="content">
 							<div id="page_wrap">
 
-								<div class="banner">
+								<div class="banner ">
 									<div class="typed_wrap">
 										<h1>Rian <span class="typed"></span></h1>
 									</div>
@@ -84,7 +87,7 @@
 											class="fa fa-instagram fa-3x fa-fw"></i></a></li>
 								<li><a href="https://whatsa.me/5548991896341/?t=Hey,%20I%20saw%20your%20projects,%20let%27s%20chat!"
 										target="_blank"><i class="fa fa-whatsapp fa-3x fa-fw"></a></i></li>
-								<li><a href="mailto:rianjunckes@gmail.com" target="_blank"><i
+								<li><a href="mailto:rianjunckes@gmail.com" ><i
 											class="fa fa-envelope fa-3x fa-fw"></i></a></li>
 								<li><a href="https://www.linkedin.com/in/rian-junckes-dilli-68201a239/"
 										target="_blank"><i class="fa fa-linkedin-square fa-3x fa-fw"></i></a></li>
@@ -101,10 +104,15 @@
 
 	<a id="about"></a>
 	<section class="about py-5">
+		<div class="main-circle">
+			<span class="circle"><a href="/en">En</a></span>
+			<span class="circle"><a href="/">Pt</a></span>
+		</div>
+		
 		<div class="container center">
 			<div class="row justify-content-center">
 				<div class="col-sm-6">
-					<div class="content">
+					<div class="content fadeInElement">
 						<div class="row mb-4">
 							<div class="col-3 col-md-2 outin">
 								<img src="images/profile.jpg" style="border-radius: 50%;" width="70" alt="">
@@ -117,9 +125,9 @@
 
 						</div>
 
-						<p>Sou uma pessoa fascinada por tecnologia desde que eu era uma criança, decidi então estudar por conta própria até finalmente conseguir meu primeiro emprego na área. </p>
-						<p>Atualmente trabalho como Programador e estou cursando superior em Ánalise e Desenvolvimento de Sistemas.</p>
-						<p>Com o foco em desenvolvimento web, me especializei principalmente com as seguintes ferramentas e linguagens: Laravel, PHP, JS, MySql, Vue, Python, Git, entre outros...</p>
+						<p class="fadeInElement">Sou uma pessoa fascinada por tecnologia desde que eu era uma criança, decidi então estudar por conta própria até finalmente conseguir meu primeiro emprego na área. </p>
+						<p class="fadeInElement">Atualmente trabalho como Programador e estou cursando superior em Ánalise e Desenvolvimento de Sistemas.</p>
+						<p class="fadeInElement">Com o foco em desenvolvimento web, me especializei principalmente com as seguintes ferramentas e linguagens: Laravel, PHP, JS, MySql, Vue, Python, Git, entre outros...</p>
 					</div>
 				</div>
 			</div>
@@ -132,40 +140,58 @@
 
 		<div class="container-fluid ">
 			<div class="content">
-				<div class="row justify-content-center">
+				<div class="fadeInLeft row justify-content-center ">
 
-					<div class="col-12 col-sm-6  text-center mb-5 item ">
-						<div class="row photos">
+					<div class="fadeInLeft col-12 col-sm-4  text-center mb-5 item ">
+						<div class=" photos">
 							<img src="images/ipad.png" class="mb-1" id="big" alt="">
 						</div>
 						<h4>MEDICINA DA VIDA <span class="text-muted"></span></h4>
 						<h2><a target="_blank" href="https://medicinadavida.com.br">Website & Blog</a>
 						</h2>
 					</div>
-					<div class="col-12 col-sm-6  text-center mb-5 item">
-						<div class="row photos">
+					<div class="col-12 col-sm-4  text-center mb-5 item fadeInLeft">
+						<div class=" photos">
 							<img src="images/pc.png" class="mb-1" id="big" alt="">
 						</div>
 						<h4>Sistema de chamados<span class="text-muted"></span></h4>
 						<h2><a href="#tkt" id="oops">Ferramenta interna para empresas</a></h2>
 					</div>
-					<div class="col-12 col-md-6 text-center mb-5 item">
-						<div class="row photos ">
+					<div class="col-12 col-md-4 text-center mb-5 item fadeInLeft">
+						<div class=" photos ">
 							<img src="images/note.png" class="mb-1" id="big" alt="">
 						</div>
 						<h4>AR - Alpinismo industrial</h4>
 						<h2> <a target="_blank" href="https://aralpinismo.com">Website + intranet</a></h2>
 
 					</div>
-					<div class="col-12 col-md-6 text-center mb-5 item">
-						<div class="row photos ">
+				</div>
+				<div class="row justify-content-center fadeInLeft">
+
+					<div class="col-12 col-md-4 text-center mb-5 item fadeInLeft">
+						<div class=" photos ">
 							<img src="images/game.png" class="mb-1" id="big" alt="">
 						</div>
 						<h4>PROJETO PESSOAL - INCOMPLETO</h4>
 						<h2> <a target="_blank" href="https://github.com/rianjd/outlandiu_game">Jogo navegador javascript</a></h2>
 
 					</div>
+					<div class="col-sm-4 flex mb-5 text-center item fadeInLeft">
+						<div class="project">
+							<div class="overlay">
+								<h4>Coming soon</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 flex mb-5 text-center item fadeInLeft">
+						<div class="project">
+							<div class="overlay">
+								<h4>Coming soon</h4>
+							</div>
+						</div>
+					</div>
 				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -175,22 +201,22 @@
 			<div class="content">
 				<div class="row justify-content-center" style="display: flex;
 				align-items: center; margin-top: 20px;">
-					<div class="col text-center">
-						<img src="images/laravel-logo.png" width="80" alt="">
+					<div class="col text-center ">
+						<img src="images/laravel-logo.png " width="80" alt="">
 					</div>
-					<div class="col text-center">
+					<div class="col text-center ">
 						<img src="images/git-icon.png" width="55" alt="">
 					</div>
-					<div class="col text-center">
+					<div class="col text-center ">
 						<img src="images/html-icon.png" width="80" alt="">
 					</div>
-					<div class="col text-center">
+					<div class="col text-center ">
 						<img src="images/py-icon.png" width="55" alt="">
 					</div>
-					<div class="col text-center">
+					<div class="col text-center ">
 						<img src="images/mysql-icon.png" width="80" alt="">
 					</div>
-					<div class="col text-center">
+					<div class="col text-center ">
 						<img src="images/php-icon.png" width="80" alt="">
 					</div>
 				</div>
@@ -201,12 +227,12 @@
 
 
 	<a id="contact"></a>
-	<section class="contact" style="padding: 20px;">
+	<section class="contact" >
 		<div class="container center">
 			<div class="row center-block">
 				<div class="col-xs-12 text-center">
-					<h2>Quer entrar em contato?</h2>
-					<h3><a href="https://whatsa.me/5548991896341/?t=E ai,%20I%20vi%20seus%20projetos,%20vamos%27%20conversar!"
+					<h3>Quer entrar em contato?</h2>
+					<h4><a href="https://whatsa.me/5548991896341/?t=E ai,%20I%20vi%20seus%20projetos,%20vamos%27%20conversar!"
 							target="_blank">Fale comigo</a></h3>
 				</div>
 			</div>
@@ -238,7 +264,18 @@
 				$('#oops-div').removeClass('oops');
 			} setTimeout(minhaFuncao, 4800);
 		})
-		$(window).scroll(function() {
+
+		$('.navbar-toggle').click(function(){
+			if($(this).hasClass('collapsed')){
+				$('.navbar').css('background','#232323')
+			}else{
+				$('.navbar').css('background','none')
+			}
+		})
+
+	});
+
+	$(window).scroll(function() {
 			var scrolled = $(window).scrollTop();
 			var navbar = $('.navbar');
 			
@@ -250,19 +287,7 @@
 				navbar.removeClass('scrolled');
 			}
 
-			if(scrolled > 400){
-				$('.item').addClass('in')
-			}	
-		});
-
-		$('.navbar-toggle').click(function(){
-			if($(this).hasClass('collapsed')){
-				$('.navbar').css('background','#232323')
-			}else{
-				$('.navbar').css('background','none')
-			}
-		})
-
+			
 	});
 	$(function () {
 		var typed = new Typed('.typed', {
